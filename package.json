@@ -1,0 +1,22 @@
+{
+  "name": "primenumbers",
+  "version": "1.0.0",
+  "description": "function to generate prime numbers",
+  "main": "src/main.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha test/tests.js"
+  },
+  "keywords": [
+    "Javascript",
+    "primeNumbers"
+  ],
+  "author": "Akhere Paul",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.0.2",
+    "mocha": "^3.4.2"
+  }
+}
