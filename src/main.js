@@ -7,9 +7,23 @@ function isPrime(i) {
 
 const getPrimes = n => {
     let list = [];
+    //For inputs equal to 1 or 0
     if ( n === 0 || n === 1 ) {
-            return false;
+            console.log('Please enter an integer greater than or equal to two');
+            return false;  
         }
+    //For strings
+    else if (typeof(n) != 'number'){
+            console.log('Please input an integer');
+            return 'undefined';
+            
+        }
+
+    // For negative input
+    else if (n < 0) {
+        console.log('Please enter a value greater than 1');
+        return 'undefined';
+    }
     for (let i = 2; i != n; ++i)
         if (isPrime(i)) list.push(i);
     return list;
@@ -18,4 +32,4 @@ const getPrimes = n => {
 module.exports = {
     getPrimes: getPrimes
 }
-console.log(getPrimes(10));
+console.log(getPrimes(0));
